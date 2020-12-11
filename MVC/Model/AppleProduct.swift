@@ -21,6 +21,4 @@ class AppleProduct {
     }
 }
 
-let appleProduct = AppleProduct(name: "Iphone 12", color: "Space Gray", price: 999.99)
-
 
