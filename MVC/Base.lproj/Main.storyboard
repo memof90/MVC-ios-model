@@ -18,10 +18,51 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="axk-fE-2CM" customClass="CustomPrettyView" customModule="MVC" customModuleProvider="target">
                                 <rect key="frame" x="82" y="298" width="250" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c0g-HZ-6Z6">
+                                        <rect key="frame" x="20" y="20" width="210" height="260"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I really want the" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKM-v8-rsD">
+                                                <rect key="frame" x="0.0" y="0.0" width="210" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IPHONE MODEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoO-Tj-Dz2">
+                                                <rect key="frame" x="0.0" y="53.5" width="210" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="in IPHONE COLOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xF0-Ca-EWh">
+                                                <rect key="frame" x="0.0" y="107" width="210" height="46"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and it costs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDL-Xo-9Dk">
+                                                <rect key="frame" x="0.0" y="161" width="210" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$IPHONE PRICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAF-fB-tF5">
+                                                <rect key="frame" x="0.0" y="214.5" width="210" height="45.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c0g-HZ-6Z6" secondAttribute="trailing" constant="20" id="43C-aH-gNB"/>
                                     <constraint firstAttribute="width" constant="250" id="HEX-kI-LOR"/>
+                                    <constraint firstAttribute="bottom" secondItem="c0g-HZ-6Z6" secondAttribute="bottom" constant="20" id="KMV-TT-WYi"/>
                                     <constraint firstAttribute="height" constant="300" id="OfK-nd-3Sy"/>
+                                    <constraint firstItem="c0g-HZ-6Z6" firstAttribute="leading" secondItem="axk-fE-2CM" secondAttribute="leading" constant="20" id="Tvq-ot-ezh"/>
+                                    <constraint firstItem="c0g-HZ-6Z6" firstAttribute="top" secondItem="axk-fE-2CM" secondAttribute="top" constant="20" id="bpk-hj-umy"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -32,10 +73,15 @@
                             <constraint firstItem="axk-fE-2CM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SUg-FG-ZS0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="iphoneColorLabel" destination="xF0-Ca-EWh" id="zW1-ax-BYT"/>
+                        <outlet property="iphoneNameLabel" destination="JoO-Tj-Dz2" id="pHu-su-fMV"/>
+                        <outlet property="iphonePriceLabel" destination="RAF-fB-tF5" id="8eZ-MK-G3R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="62"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="61.607142857142854"/>
         </scene>
     </scenes>
     <resources>
